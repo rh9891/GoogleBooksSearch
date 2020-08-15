@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+#navBarText1.navbar-item {
+    font-family: "Roboto", sans-serif;
+}
+
+#navBarText2.navbar-item, #navBarText3.navbar-item {
+    font-family: "Open Sans", sans-serif;
+}
