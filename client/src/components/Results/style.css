@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
 
-#resultsHeaderText {
+#resultsHeaderText, #viewButton, #saveButton {
+    font-family: "Open Sans", sans-serif;
+}
+
+.bookDescriptionText, .bookTitle {
     font-family: "Open Sans", sans-serif;
 }
