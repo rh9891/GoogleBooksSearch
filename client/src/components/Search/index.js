@@ -7,7 +7,7 @@ function Search() {
       <br/>
     <div className="content">
       <article className="message is-primary">
-        <div className="message-header">
+        <div className="message-header" id="messageHeaderText">
           <p>Book Search</p>
         </div>
         <div className="message-body">
@@ -21,7 +21,7 @@ function Search() {
                 />
               </div>
               <div className="control">
-                <a className="button is-primary">Search</a>
+                <a className="button is-primary" id="searchButtonText">Search</a>
               </div>
             </div>
           </div>
