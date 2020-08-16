@@ -1,14 +1,18 @@
-import React from "react";
+import React, { Component } from "react";
 import Search from "../Search";
 import Results from "../Results";
+import API from "../../utils/API";
 
-function BookSearch() {
+class BookSearch extends Component() {
+  render() {
   return (
     <>
-    <Search />
+    <Search 
+    />
     <Results />
     </>
 );
+}
 }
 
 export default BookSearch;
