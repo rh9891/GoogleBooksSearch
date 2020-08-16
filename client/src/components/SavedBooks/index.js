@@ -5,7 +5,7 @@ import Results from "../Results";
 
 class SavedBooks extends Component() {
   state = {
-    savedBooks = [],
+    savedBooks: [],
   }
 
   componentDidMount() {
