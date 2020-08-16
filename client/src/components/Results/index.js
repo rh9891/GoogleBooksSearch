@@ -1,7 +1,8 @@
-import React from "react";
+import React, {Component} from "react";
 import "./style.css";
 
-function Results() {
+class Results extends Component() {
+  render() {
   return (
 <>
 <article className="message is-primary">
@@ -33,6 +34,7 @@ function Results() {
 </article>
 </>
   );
+}
 }
 
 export default Results;
