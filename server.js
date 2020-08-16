@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Connection to the MongoDB.
-mongoose.connect(process.env.MONGOD_URI || "mongod://localhost/googlebookssearch");
+mongoose.connect(process.env.MONGOD_URI || "mongod://localhost/googlebooks");
 
 // Static files that will be used upon deployment to Heroku.
 if (process.env.NODE_ENV === "production") {
@@ -21,7 +21,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // Routes
-app.use(routes)
+app.use(routes);
 
 // Set up the server.
 app.listen(PORT, function() {
