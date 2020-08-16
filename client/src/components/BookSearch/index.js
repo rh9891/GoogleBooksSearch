@@ -47,8 +47,11 @@ class BookSearch extends Component() {
   return (
     <>
     <Search
+      search={this.state.search}
+      handleInputChange={this.handleInputChange}
+      handleFormSubmit={this.handleFormSubmit}
     />
-    <Results />
+    <Results books={this.state.books} />
     </>
 );
 }
