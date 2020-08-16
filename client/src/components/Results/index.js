@@ -4,7 +4,6 @@ import "./style.css";
 function Results() {
   return (
 <>
-<br />
 <article class="message is-primary">
   <div class="message-header" id="resultsHeaderText">
     <p>Results</p>
