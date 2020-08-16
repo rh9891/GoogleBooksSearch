@@ -1,7 +1,8 @@
 import React from "react";
 import "./style.css";
+import { PromiseProvider } from "mongoose";
 
-function Search() {
+function Search(props) {
   return (
       <>
       <br/>
@@ -17,11 +18,17 @@ function Search() {
                 <input
                   className="input"
                   type="text"
+                  onChange={props.handleInputChange}
+                  value={props.search}
+                  name="search"
                   placeholder="e.g. Harry Potter and the Order of the Phoenix"
+                  id="searchInputForm"
                 />
               </div>
               <div className="control">
-                <a className="button is-primary" id="searchButtonText">Search</a>
+                <a 
+                onClick={props.handleFormSubmit}
+                className="button is-primary" id="searchButtonText">Search</a>
               </div>
             </div>
           </div>
