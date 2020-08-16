@@ -1,7 +1,10 @@
-import React from "react";
+import React, { Component } from "react";
 import "./style.css";
+import API from "../../utils/API";
+import Results from "../Results";
 
-function SavedBooks() {
+class SavedBooks extends Component() {
+  render() {
   return (
       <>
      <br />
@@ -15,6 +18,7 @@ function SavedBooks() {
 </article>
 </>
   );
+}
 }
 
 export default SavedBooks;
