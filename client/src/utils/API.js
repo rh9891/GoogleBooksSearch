@@ -1,10 +1,9 @@
 import axios from "axios";
-require("dotenv").config();
 
 export default {
     // Gets all books.
     getBook: function (query) {
-        return axios.get(`https://www.googleapis.com/books/v1/volumes?q=${query}&key=${process.env.GOOGLE_PASS}`)
+        return axios.get(`https://www.googleapis.com/books/v1/volumes?q=${query}`)
     },
     // Deletes the book with a given id.
     deleteBook: function (id) {
