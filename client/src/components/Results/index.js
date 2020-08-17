@@ -36,6 +36,7 @@ class Results extends Component {
 
   render() {
     return (
+      <article className="message is-primary">
         <div className="message-body is-primary">
           {!this.props.books.length ? (
             <h2 className="noResultsDisplay">
@@ -93,6 +94,7 @@ class Results extends Component {
             </div>
           )}
         </div>
+        </article>
     );
   }
 }
