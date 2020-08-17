@@ -57,9 +57,9 @@ class Results extends Component {
                       </figure>
                     </div>
                     <div className="column">
-                      <h5 className="bookTitle">
+                      <h3 className="bookTitle">
                         {result.title} by {result.authors}
-                      </h5>
+                      </h3>
                       <br />
                       <p className="bookDescriptionText">
                         {result.description}
@@ -82,7 +82,7 @@ class Results extends Component {
                           {this.state.savedBooks
                             .map(book => book._id)
                             .includes(result._id)
-                            ? "Unsave"
+                            ? "Delete"
                             : "Save"}
                         </button>
                       </div>
