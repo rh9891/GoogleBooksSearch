@@ -51,6 +51,17 @@ class BookSearch extends Component {
       handleInputChange={this.handleInputChange}
       handleFormSubmit={this.handleFormSubmit}
     />
+    <br />
+     <article className="message is-primary">
+        <div className="message-header" id="resultsHeaderText">
+          <p>Results</p>
+          <button
+            className="delete"
+            id="bookSearchResultsDeleteButton"
+            aria-label="delete"
+          ></button>
+        </div>
+        </article>
     <Results books={this.state.books} />
     </>
 );

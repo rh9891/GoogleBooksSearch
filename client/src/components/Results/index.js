@@ -36,20 +36,10 @@ class Results extends Component {
 
   render() {
     return (
-      <article className="message is-primary">
-        <div className="message-header" id="resultsHeaderText">
-          <p>Results</p>
-          <button
-            className="delete"
-            id="bookSearchResultsDeleteButton"
-            aria-label="delete"
-          ></button>
-        </div>
-
-        <div>
+        <div className="message-body is-primary">
           {!this.props.books.length ? (
             <h2 className="noResultsDisplay">
-              No information available for this book.
+              No information available.
             </h2>
           ) : (
             <div>
@@ -103,7 +93,6 @@ class Results extends Component {
             </div>
           )}
         </div>
-      </article>
     );
   }
 }
