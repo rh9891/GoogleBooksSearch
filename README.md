@@ -44,15 +44,19 @@ THEN I should be able to remove the selected book from my Saved Books section.
 
 ## Preview of the (React) Google Books Search
 
-![Google Books Search Homepage]()
+![Google Books Search Homepage](assets/images/googleBooksSearchHomepage.png)
 
 The following animation demonstrates the application's search and save functionality:
 
-![Google Books Search Search Functionality]()
+![Google Books Search and Save Functionality](assets/videos/googleBooksSearchSaveFunctionality.gif)
+
+The following animation demonstrates the application's search and view functionality:
+
+![Google Books Search and View Functionality](assets/videos/googleBooksSearchViewFunctionality.gif)
 
 The following animation demonstrates the application's delete functionality:
 
-![Google Books Search Delete Functionality]()
+![Google Books Search Delete Functionality](assets/videos/googleBooksSearchDeleteFunctionality.gif)
 
 ## Links
 
