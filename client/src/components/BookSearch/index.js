@@ -9,10 +9,6 @@ class BookSearch extends Component {
     books: []
   };
 
-  componentDidMount() {
-    this.searchBook();
-  };
-
   makeBook = bookData => {
     return {
       _id: bookData.id,
