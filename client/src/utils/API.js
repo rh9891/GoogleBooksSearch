@@ -3,7 +3,7 @@ import axios from "axios";
 export default {
     // Gets all books.
     getBook: function (query) {
-        return axios.get("`https://www.googleapis.com/books/v1/volumes?q=${query}`")
+        return axios.get(`https://www.googleapis.com/books/v1/volumes?q=${query}&key=${process.env.GOOGLE_PASS}`)
     },
     // Deletes the book with a given id.
     deleteBook: function (id) {
