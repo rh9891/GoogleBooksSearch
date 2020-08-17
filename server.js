@@ -1,6 +1,6 @@
 // Pulls in the required dependencies.
 const express = require("express");
-
+const path = require("path");
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
@@ -23,6 +23,10 @@ if (process.env.NODE_ENV === "production") {
 
 // Routes
 app.use(routes);
+
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
 
 // Set up the server.
 app.listen(PORT, function() {
