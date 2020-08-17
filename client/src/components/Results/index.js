@@ -36,18 +36,16 @@ class Results extends Component {
 
   render() {
     return (
-      <article className="message is-primary">
-        <div className="message-body is-primary">
+      <article className="userMessage">
           {!this.props.books.length ? (
             <h2 className="noResultsDisplay">
-              No information available.
+              &nbsp;&nbsp;No information available.
             </h2>
           ) : (
-            <div>
+            <div id="allBooks">
               <br />
               {this.props.books.map((result) => (
                 <div
-                  className="message-body"
                   id="bookSearchResultsDiv"
                   key={result._id}
                 >
@@ -94,7 +92,6 @@ class Results extends Component {
               ))}
             </div>
           )}
-        </div>
         </article>
     );
   }

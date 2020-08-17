@@ -47,7 +47,6 @@ class BookSearch extends Component {
       handleInputChange={this.handleInputChange}
       handleFormSubmit={this.handleFormSubmit}
     />
-    <br />
      <article className="message is-primary">
         <div className="message-header" id="resultsHeaderText">
           <p>Results</p>
