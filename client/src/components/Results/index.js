@@ -44,6 +44,7 @@ class Results extends Component {
             </h2>
           ) : (
             <div>
+              <br />
               {this.props.books.map((result) => (
                 <div
                   className="message-body"
@@ -61,6 +62,7 @@ class Results extends Component {
                       <h5 className="bookTitle">
                         {result.title} by {result.authors}
                       </h5>
+                      <br />
                       <p className="bookDescriptionText">
                         {result.description}
                       </p>
@@ -80,7 +82,7 @@ class Results extends Component {
                           id="saveButton"
                         >
                           {this.state.savedBooks
-                            .map((book) => book._id)
+                            .map(book => book._id)
                             .includes(result._id)
                             ? "Unsave"
                             : "Save"}
@@ -97,4 +99,5 @@ class Results extends Component {
     );
   }
 }
+
 export default Results;
