@@ -3,7 +3,7 @@ import Search from "../Search";
 import Results from "../Results";
 import API from "../../utils/API";
 
-class BookSearch extends Component() {
+class BookSearch extends Component {
   state = {
     value: "",
     books: []

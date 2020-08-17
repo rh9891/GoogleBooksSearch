@@ -3,7 +3,7 @@ import "./style.css";
 import API from "../../utils/API";
 import Results from "../Results";
 
-class SavedBooks extends Component() {
+class SavedBooks extends Component {
   state = {
     savedBooks: [],
   }
