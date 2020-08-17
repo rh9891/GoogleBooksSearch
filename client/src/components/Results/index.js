@@ -68,12 +68,11 @@ class Results extends Component {
                     <div className="column is-2">
                       <div className="buttons">
                         <button
-                          href={result.link}
                           className="button is-primary"
-                          id="viewButton"
-                          target="_blank"
-                        >
-                          View
+                          id="viewButton">
+                          <a href={result.link}
+                          target="_blank">
+                          View</a>
                         </button>
                         <button
                           onClick={() => this.handleSave(result)}
@@ -81,7 +80,7 @@ class Results extends Component {
                           id="saveButton"
                         >
                           {this.state.savedBooks
-                            .map((book) => book.id)
+                            .map((book) => book._id)
                             .includes(result._id)
                             ? "Unsave"
                             : "Save"}
